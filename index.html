@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="A multiple-object tracker and dataset for infield cotton boll counting.">
+  <meta name="keywords" content="computer vision, multi-object tracking, agriculture, cotton">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NTrack: A Multiple-Object Tracker and Dataset for Infield Cotton Boll Counting</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G98Z7CL7LN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-G98Z7CL7LN');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Intuitive Robot Integration via Virtual Reality Workspaces</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"> Minh Q. Tram and <a href="https://ranger.uta.edu/~wjbeksi">William J. Beksi</a></span>
+          </div>
+          <div class="is-size-5 publication-university">
+            <span class="author-block">The University of Texas at Arlington</span>
+          </div>
+          <div class="is-size-5 publication-lab">
+            <span class="author-block">
+              <a href="https://rvl.uta.edu">Robotic Vision Laboratory</a></span>
+          </div>
+          <div class="column is-centered">
+            <div class="publication-links">
+              <!-- Paper link -->
+              <span class="link-block">
+                <a href="https://ieeexplore.ieee.org/document/10160699" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Preprint link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2305.15657.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Preprint</span>
+                </a>
+              </span>
+              <!-- Presentation link -->
+              <span class="link-block">
+                <a href="https://youtu.be/0qJosxq8gi8?si=lEtZOH6OvsoW9H2Z" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Presentation</span>
+                </a>
+              </span>
+              <!-- Source code link -->
+              <span class="link-block">
+                <a href="https://github.com/robotic-vision-lab/Unity-VR-Robotic-Workspace" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Unity-side VRRW Application</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/robotic-vision-lab/Unity-VRRW-ROS-Backend" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>ROS-side VRRW Application</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item vid16_01_raw">
+          <video poster="" id="raw" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/demo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop" id="Abstract">
+    <div class="columns is-centered">
+      <!-- Abstract -->
+      <div class="column is-full-width">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            As robots become increasingly prominent in di-
+            verse industrial settings, the desire for an accessible and
+            reliable system has correspondingly increased. Yet, the task
+            of meaningfully assessing the feasibility of introducing a new
+            robotic component, or adding more robots into an existing
+            infrastructure, remains a challenge. This is due to both the
+            logistics of acquiring a robot and the need for expert knowledge
+            in setting it up. In this paper, we address these concerns by
+            developing a purely virtual simulation of a robotic system. Our
+            proposed framework enables natural human-robot interaction
+            through a visually immersive representation of the workspace.
+            The main advantages of our approach are the following: (i)
+            independence from a physical system, (ii) flexibility in defining
+            the workspace and robotic tasks, and (iii) an intuitive interac-
+            tion between the operator and the simulated environment. Not
+            only does our system provide an enhanced understanding of 3D
+            space to the operator, but it also encourages a hands-on way
+            to perform robot programming. We evaluate the effectiveness
+            of our method in applying novel automation assignments by
+            training a robot in virtual reality and then executing the task
+            on a real robot.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container is-max-desktop content" id="Citation">
+    <!-- Citation -->
+    <h2 class="title is-3">Citation</h2>
+    <p>
+      If you find this project useful, then please consider citing our paper.
+    </p>
+    <pre><code>@INPROCEEDINGS{10160699,
+      author={Tram, Minh Q. and Cloud, Joseph M. and Beksi, William J.},
+      booktitle={2023 IEEE International Conference on Robotics and Automation (ICRA)},
+      title={Intuitive Robot Integration via Virtual Reality Workspaces},
+      year={2023},
+      volume={},
+      number={},
+      pages={11654-11660},
+      keywords={Training;Solid modeling;Automation;Three-dimensional displays;Service robots;Virtual reality;Reliability;Virtual Reality and Interfaces;Human-Centered Automation;Human-Robot Collaboration},
+      doi={10.1109/ICRA48891.2023.10160699}}
+    </code></pre>
+  </div>
+  <br>
+
+  <div class="container is-max-desktop" id="License">
+    <div class="columns is-centered">
+      <!-- License-->
+      <div class="column is-full-width">
+        <h2 class="title is-3">License</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>VRRW</strong> is licensed under the
+            <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            This means you are free to borrow the
+            <a href="https://github.com/robotic-vision-lab/Virtual-Reality-Robotic-Workspace">source code</a>
+            of this website, we just ask that you link back to this page in the
+            footer. Please remember to remove the analytics code included in
+            the header of this website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
